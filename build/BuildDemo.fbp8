@@ -1,0 +1,126 @@
+﻿project
+begin
+  projectid = {03C2D926-B9EA-4494-BF67-E0A8F68A0846}
+  target
+  begin
+    name = Default
+    targetid = {44ED6F35-C879-46D4-92C3-D4DAD5FB6ACC}
+    rootaction
+    begin
+      action.delphi.build
+      begin
+        allowimplicitimport = true
+        alwaysuseconditionalsfromdof = false
+        autoincbuild = true
+        autoupdatefileversion = true
+        autoupdateproductversion = false
+        buildall = true
+        buildversion = 0
+        codepage = 1252
+        compileprojectresources = false
+        compileridl = true
+        configname = Release
+        debugversionnumbers = false
+        delphiversion = Delphi10Tokyo
+        eurekalogverboselogging = false
+        frameworktype = VCL
+        hintsaserror = false
+        id = {AA6AA256-8408-48BC-B319-77BFFC9CBBFA}
+        includecompiledate = false
+        includemanifest = false
+        includeverinfo = false
+        isdebug = false
+        isdll = false
+        isprerelease = false
+        isprivate = false
+        isspecial = false
+        keepcfg = false
+        linkproductversiontofileversion = true
+        locale = 3081
+        majorversion = 0
+        minorversion = 0
+        platform = Win32
+        platformsdktype = ProjectSDK
+        projectfile = D:\\projects\\play\\TestCI\\TestCI\\HelloDemo.dpr
+        regenerateresource = true
+        releaseversion = 0
+        resourcecompilertype = rcBorland
+        startingdir = D:\\projects\\play\\TestCI\\TestCI\\
+        updatedoffile = false
+        updatepackagesource = false
+        updateversioninfokeys = false
+        useeurekalogcompiler = false
+        useprojectsettings = [usPackages,usCompiler,usLinker,usDirectories]
+        usepropertyset = false
+        useversionfromdof = false
+        verboseoutput = false
+        versioninfokeys = "CompanyName\=" +
+                          "FileDescription\=" +
+                          "FileVersion\=0.0.0.0" +
+                          "InternalName\=" +
+                          "LegalCopyright\=" +
+                          "LegalTrademarks\=" +
+                          "OriginalFilename\=" +
+                          "ProductName\=" +
+                          "ProductVersion\=0.0.0.0" +
+                          "Comments\=" +
+                          ""
+        warningsaserror = false
+        workaroundd5bug = false
+        delphi.compileroptions
+        begin
+          alwaysuseconditionalsfromdof = false
+          alwaysusedelphilibrarypath = false
+          alwaysusedofsearchpath = false
+          assertions = true
+          assignableconst = false
+          booleval = false
+          compilerwarnings = "-w-UNSAFE_TYPE\=0" +
+                             "-w-UNSAFE_CODE\=0" +
+                             "-w-UNSAFE_CAST\=0" +
+                             ""
+          consoleapp = false
+          debuginfo = true
+          definitionsonly = true
+          emitruntimetypeinformation = false
+          exportallsymbols = false
+          extendedsyntax = true
+          externaltd32 = true
+          frameworktype = None
+          generatedocumentation = false
+          generatehpp = false
+          hugestrings = true
+          imagebase = 4194304
+          includenamespaces = false
+          includeremotesymbols = false
+          includetd32 = false
+          inlining = inOn
+          iochecking = true
+          librarypath = "$(BDSLIB)\\$(Platform)\\release;$(BDSUSERDIR)\\Imports;$(BDS)\\Imports;$(BDSCOMMONDIR)\\Dcp;$(BDS)\\include;C:\\Program Files (x86)\\Raize\\CS5\\Lib\\RX10.2\\Win32;C:\\Program Files (x86)\\Raize\\RC6.2.3\\Lib\\RX10.2\\Win32;E:\\dev\\DevExpress-VCL-16.1.2\\DevExpress VCL\\Library\\RAD Studio 10.2;E:\\dev\\DISQLite3\\Source;E:\\dev\\DISQLite3\\D10_2\\win32;C:\\Program Files (x86)\\Neos Eureka S.r.l\\EurekaLog 7\\Lib\\Common\\;C:\\Program Files (x86)\\Neos Eureka S.r.l\\EurekaLog 7\\Lib\\Win32\\Release\\Studio25\\;C:\\Program Files (x86)\\Neos Eureka S.r.l\\EurekaLog 7\\Source\\Extras"
+          linkeroutput = 0
+          localsymbols = true
+          mapfile = 0
+          maxstacksize = 1048576
+          minstacksize = 16384
+          namespaceprefixes = System;Xml;Data;Datasnap;Web;Soap;Winapi;System.Win;Data.Win;Web.Win;Soap.Win;Bde;
+          openstrings = true
+          optimisation = true
+          overflowchecking = false
+          rangechecking = false
+          recordfieldalign = fa8
+          referenceinfo = true
+          safedivide = false
+          showhints = true
+          showwarnings = true
+          stackframes = false
+          stringchecks = true
+          typedpointers = false
+          unitaliases = WinTypes\=Windows;WinProcs\=Windows;DbiTypes\=BDE;DbiProcs\=BDE;DbiErrs\=BDE;
+          usedebugdcu = false
+          usepackages = false
+          varstringchecks = true
+        end
+      end
+    end
+  end
+end
