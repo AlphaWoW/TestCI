@@ -10,7 +10,7 @@ begin
       action.delphi.build
       begin
         allowimplicitimport = true
-        alwaysuseconditionalsfromdof = false
+        alwaysuseconditionalsfromdof = true
         autoincbuild = true
         autoupdatefileversion = true
         autoupdateproductversion = false
@@ -41,11 +41,11 @@ begin
         minorversion = 0
         platform = Win32
         platformsdktype = ProjectSDK
-        projectfile = D:\\projects\\play\\TestCI\\TestCI\\HelloDemo.dpr
+        projectfile = %ProjDir%\\HelloDemo.dpr
         regenerateresource = true
         releaseversion = 0
         resourcecompilertype = rcBorland
-        startingdir = D:\\projects\\play\\TestCI\\TestCI\\
+        startingdir = %ProjDir%
         updatedoffile = false
         updatepackagesource = false
         updateversioninfokeys = false
@@ -69,24 +69,21 @@ begin
         workaroundd5bug = false
         delphi.compileroptions
         begin
-          alwaysuseconditionalsfromdof = false
-          alwaysusedelphilibrarypath = false
-          alwaysusedofsearchpath = false
+          alwaysuseconditionalsfromdof = true
+          alwaysusedelphilibrarypath = true
+          alwaysusedofsearchpath = true
           assertions = true
           assignableconst = false
           booleval = false
-          compilerwarnings = "-w-UNSAFE_TYPE\=0" +
-                             "-w-UNSAFE_CODE\=0" +
-                             "-w-UNSAFE_CAST\=0" +
-                             ""
+          conditionals = RELEASE
           consoleapp = false
-          debuginfo = true
-          definitionsonly = true
+          debuginfo = false
+          definitionsonly = false
           emitruntimetypeinformation = false
           exportallsymbols = false
           extendedsyntax = true
-          externaltd32 = true
-          frameworktype = None
+          externaltd32 = false
+          frameworktype = VCL
           generatedocumentation = false
           generatehpp = false
           hugestrings = true
@@ -98,29 +95,39 @@ begin
           iochecking = true
           librarypath = "$(BDSLIB)\\$(Platform)\\release;$(BDSUSERDIR)\\Imports;$(BDS)\\Imports;$(BDSCOMMONDIR)\\Dcp;$(BDS)\\include;C:\\Program Files (x86)\\Raize\\CS5\\Lib\\RX10.2\\Win32;C:\\Program Files (x86)\\Raize\\RC6.2.3\\Lib\\RX10.2\\Win32;E:\\dev\\DevExpress-VCL-16.1.2\\DevExpress VCL\\Library\\RAD Studio 10.2;E:\\dev\\DISQLite3\\Source;E:\\dev\\DISQLite3\\D10_2\\win32;C:\\Program Files (x86)\\Neos Eureka S.r.l\\EurekaLog 7\\Lib\\Common\\;C:\\Program Files (x86)\\Neos Eureka S.r.l\\EurekaLog 7\\Lib\\Win32\\Release\\Studio25\\;C:\\Program Files (x86)\\Neos Eureka S.r.l\\EurekaLog 7\\Source\\Extras"
           linkeroutput = 0
-          localsymbols = true
+          localsymbols = false
           mapfile = 0
           maxstacksize = 1048576
           minstacksize = 16384
-          namespaceprefixes = System;Xml;Data;Datasnap;Web;Soap;Winapi;System.Win;Data.Win;Web.Win;Soap.Win;Bde;
+          namespaceprefixes = System;Xml;Data;Datasnap;Web;Soap;Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;
           openstrings = true
           optimisation = true
+          outputdir = .\\$(Platform)\\$(Config)
           overflowchecking = false
+          packages = restbackendcomponents;cloudservice;soaprtl;soapmidas;restcomponents;emsclientfiredac;datasnapfiredac;firedacibdriver;emsclient;firedaccommon;soapserver;firedaccommondriver;inet;firedac;firedacsqlitedriver;dbxsqlitedriver;dxpsprvwribbonrs25;dxribboncustomizationformrs25;dbxdb2driver;dxskinoffice2007pinkrs25;dxskinmcskinrs25;vclactnband;vclfiredac;cxexportrs25;dxhttpindyrequestrs25;tethering;dxpscxcommonrs25;firedacadsdriver;cxpivotgridolaprs25;firedacmssqldriver;cxschedulergridrs25;vcltouch;dxskindarkroomrs25;dxskindarksiders25;vcldb;intraweb;svn;dxgaugecontrolrs25;cxlibraryrs25;dxskinoffice2007silverrs25;dxskinscxschedulerpainterrs25;dxskinblackrs25;vclib;dxskinoffice2007bluers25;dxskinoffice2007blackrs25;firedacdbxdriver;dxskinvs2010rs25;vclx;dxskinfoggyrs25;dxspreadsheetconditionalformattingdialogsrs25;dxskinsevenrs25;dxskinspringtimers25;dxtilecontrolrs25;dxmapcontrolrs25;dxpdfviewerrs25;dxdockingrs25;vclrestcomponents;dxskinsdxnavbarpainterrs25;cxpagecontrolrs25;dxskinlilianrs25;dxpslnksrs25;dxwizardcontrolrs25;dxricheditcontrolrs25;vclie;bindengine;dxfiredacservermoders25;firedacmysqldriver;dxskinoffice2013lightgrayrs25;dxskinmetropolisrs25;datasnapclient;dxskinoffice2016darkrs25;bindcompdbx;dxskinblueprintrs25;dxskinstardustrs25;dbxsybaseasedriver;indyipserver;dxpsdxlclnkrs25;indysystem;dxskinoffice2007greenrs25;dsnapcon;dxlayoutcontrolrs25;dxpsricheditcontrollnkrs25;firedacmsaccdriver;fmxfiredac;firedacinfxdriver;vclimg;dxdbtrrs25;dxpscxtllnkrs25;emshosting;dxspreadsheetrs25;dxskinvisualstudio2013lightrs25;dbxodbcdriver;firedactdatadriver;fmxtee;cxgridrs25;dxskintheasphaltworldrs25;dbxcommondriver;codesiteloggingpkg;dxorgcrs25;dxpscxschedulerlnkrs25;dxskinhighcontrastrs25;xmlrtl;datasnapnativeclient;fmxobj;dxpscxgridlnkrs25;rtl;dbxclientdriver;dbxsybaseasadriver;dxpscorers25;dxmdsrs25;dxskinoffice2016colorfulrs25;appanalytics;indyipclient;bindcompvcl;dxskinscxpcpainterrs25;dxthemers25;teeui;vclsmp;firedacodbcdriver;datasnapindy10servertransport;datasnapproviderclient;firedacmongodbdriver;cxverticalgridrs25;dxtrmdrs25;dxadoservermoders25;dxskinpumpkinrs25;datasnapservermidas;dxcorers25;cxschedulertreebrowserrs25;dxskinvalentiners25;dbxinterbasedriver;dxpsteechartrs25;svnui;dxskinoffice2010bluers25;dxskinmoneytwinsrs25;dxskinsilverrs25;dbxmssqldriver;dxpsdxfclnkrs25;datasnapconnectorsfreepascal;dxskinoffice2013whiters25;bindcompfmx;dbxoracledriver;inetdb;raizecomponentsvcl;dxofficecorers25;fmxteeui;emsedge;raizecomponentsvcldb;fmx;fmxdae;dxskinbluers25;dxtabbedmdirs25;dxbardbnavrs25;dxpscxpivotgridlnkrs25;fsvcl2010;dxskindevexpressdarkstylers25;dbexpress;indycore;dxflowchartrs25;dxskinsdxdlpainterrs25;dsnap;datasnapcommon;dxbarrs25;dxpsdbteechartrs25;dxskinliquidskyrs25;dxdborrs25;datasnapconnectors;dxpscxextcommonrs25;cxpivotgridrs25;disqlite3_d10_2;dxpsdxspreadsheetlnkrs25;dxnavbarrs25;cxschedulerribbonstyleeventeditorrs25;dxskincoffeers25;firedacoracledriver;dbxmysqldriver;dbxfirebirddriver;firedaccommonodbc;dxskinoffice2010silverrs25;cxtreelistrs25;dxskinsdxbarpainterrs25;indyipcommon;dxskinlondonliquidskyrs25;vcl;dxpscxvgridlnkrs25;dxbarextitemsrs25;dxskinscorers25;dxcomnrs25;firedacdb2driver;dxskinwhiteprintrs25;dxpsdxdbtvlnkrs25;dxskinvisualstudio2013bluers25;dxskinglassoceansrs25;dxskinmetropolisdarkrs25;dxskinoffice2013darkgrayrs25;dxskinsharpplusrs25;teedb;dxskincaramelrs25;dxservermoders25;dxpscxpcprodrs25;firedacpgdriver;ibmonitor;firedacasadriver;cxeditorsrs25;dxskinimaginaryrs25;ibxpress;tee;codesitedbtoolspkg;datasnapserver;ibxbindings;dxpsprvwadvrs25;vclwinx;firedacdsdriver;dxskinsevenclassicrs25;cxdatars25;cxtreelistdxbarpopupmenurs25;customiptransport;vcldsnap;dxpsdxoclnkrs25;dxskinsharprs25;bindcomp;dbxinformixdriver;cxpivotgridchartrs25;cxschedulerrs25;dxbarextdbitemsrs25;dxskinvisualstudio2013darkrs25;dxskinoffice2010blackrs25;eurekalogcore;dxdbxservermoders25;dxskindevexpressstylers25;dxgdiplusrs25;dxpsdxgaugecontrollnkrs25;dxskinsdxribbonpainterrs25;dbxcds;adortl;dxpsdxdboclnkrs25;dxribbonrs25;dsnapxml;dxspellcheckerrs25;dbrtl;inetdbxpress;indyprotocols;dxskinsummer2008rs25;dxpsdxmapcontrollnkrs25;dxskinxmas2008bluers25;fmxase
           rangechecking = false
           recordfieldalign = fa8
-          referenceinfo = true
+          referenceinfo = false
           safedivide = false
           showhints = true
           showwarnings = true
           stackframes = false
           stringchecks = true
           typedpointers = false
-          unitaliases = WinTypes\=Windows;WinProcs\=Windows;DbiTypes\=BDE;DbiProcs\=BDE;DbiErrs\=BDE;
+          unitaliases = WinTypes\=Windows;WinProcs\=Windows;DbiTypes\=BDE;DbiProcs\=BDE;DbiErrs\=BDE
+          unitoutputdir = .\\$(Platform)\\$(Config)
           usedebugdcu = false
           usepackages = false
           varstringchecks = true
         end
       end
     end
+  end
+  variable
+  begin
+    defaultvalue = D:\\projects\\play\\TestCI\\TestCI\\
+    name = ProjDir
+    variablescope = vtProject
+    variabletype = btString
   end
 end
